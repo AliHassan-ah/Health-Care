@@ -1,0 +1,19 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 40%;
+  height: 100vh;
+  left: -100%;
+  background-color: white;
+  color: #014e78;
+  transition: left 0.5s ease-in-out;
+  &.open {
+    left: 0;
+  }
+  @media screen and (max-width: 750px) {
+    width: 55%;
+  }
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
