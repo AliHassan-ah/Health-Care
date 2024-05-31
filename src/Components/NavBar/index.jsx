@@ -7,11 +7,11 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import hooks from "../../Hooks";
 const { useWindowSize } = hooks;
-const NavBar = () => {
+const NavBar = ({ toggleSideBar }) => {
   const [isOpenSideMenu, setIsOpenSideMenu] = useState(false);
-  const width = useWindowSize();
   const handleSideMenu = () => {
     setIsOpenSideMenu(!isOpenSideMenu);
+    toggleSideBar();
   };
   return (
     <div className="parent shadow w-full">
@@ -68,11 +68,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {width < 1000 && (
-        <div className={`sidebar ${isOpenSideMenu ? "open" : ""}`}>
-          <div className="sidebarHeader">Sidebar</div>
-        </div>
-      )}
     </div>
   );
 };
