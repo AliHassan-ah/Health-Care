@@ -1,0 +1,14 @@
+.greetings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  .userName {
+    font-weight: 500;
+  }
+  .punchLine {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}

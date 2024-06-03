@@ -1,12 +1,13 @@
 import React from "react";
 import "./Home.scss";
+import components from "../../Components";
+const { Greetings } = components;
 const Home = () => {
   return (
     <div className="homeContainer">
-      Homepage Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Voluptatem iure mollitia voluptate vero suscipit quod ad reprehenderit?
-      Modi doloremque ipsum aliquid distinctio, quasi cum exercitationem saepe
-      ipsa officia quo magnam.
+      <div className="homeWrapper">
+        <Greetings />
+      </div>
     </div>
   );
 };

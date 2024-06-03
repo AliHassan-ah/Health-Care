@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./index.scss";
 import components from "../Components";
 import { Outlet } from "react-router-dom";
 const { NavBar, SideBar } = components;
@@ -9,7 +8,7 @@ const Layout = () => {
     setIsSideBarOpen(!isSideBarOpen);
   };
   return (
-    <div className="layout">
+    <div className="">
       <NavBar toggleSideBar={toggleSideBar} />
       <SideBar isSideBarOpen={isSideBarOpen} toggleSideBar={toggleSideBar} />
       <Outlet />

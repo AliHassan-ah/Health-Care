@@ -4,7 +4,7 @@ const SidebarTabsData = [
     tabData: "This Data Belongs to Tab1",
   },
   {
-    tabTitle: "Menu2",
+    tabTitle: "Instant Doctor",
     tabData: "Tab 2",
   },
 ];
